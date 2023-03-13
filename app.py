@@ -10,4 +10,4 @@ x = st.number_input('Input Temperature' )
 x = np.array(x)
 if st.button("Predict"):
    y = model.predict(x.reshape(-1,1))
-   st.success(str(y))
+   st.success(y[0])
