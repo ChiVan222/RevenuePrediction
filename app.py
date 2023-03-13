@@ -1,7 +1,7 @@
 import streamlit as st
 import sklearn
 import pickle
-model = pickle.load(open(model.pickle,"rb"))
+model = pickle.load(open("model.pickle","rb"))
 st.balloons()
 st.snow()
 st.title('Revenue Prediction')
