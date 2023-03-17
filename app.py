@@ -8,6 +8,7 @@ st.snow()
 st.title('Revenue Prediction')
 x = st.number_input('Input Temperature' )
 x = np.array(x)
+st.caption("Revenue Prediction")
 if st.button("Predict"):
    y = model.predict(x.reshape(-1,1))
    st.success(*y)
